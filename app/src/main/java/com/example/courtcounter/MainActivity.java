@@ -14,13 +14,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-//        displayForTeamA(15);
     }
 
-    /**
-     * Displays the given score for Team A.
-     */
     public void displayForTeamA(int score){
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
@@ -41,9 +36,6 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamA(scoreTeamA);
     }
 
-    /**
-     * Displays the given score for Team B.
-     */
     public void displayForTeamB(int score){
         TextView scoreView  = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
@@ -71,10 +63,3 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamB(scoreTeamB);
     }
 }
-
-// This is my method to display score from previous Just java app (alternate of displayForTeamA() method)--
-
-//    private void displayScore(int num){
-//        TextView score = (TextView) findViewById(R.id.team_a_score);
-//        score.setText("" + num);
-//    }
